@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+}
+
+* .login-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* .login-container .left {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .login-container .left .logo-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .login-container .left .logo-container .logo-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #202020;
+}
+
+* .login-container .left .image-container .school {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  font-size: 1.5rem;
+  margin-left: 150px;
+}
+
+* .login-container .right {
+  background-color: #005b7c;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px 30px;
+  border-radius: 25px;
+}
+
+* .login-container .right .form-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+* .login-container .right .form-container .boy-container {
+  width: 100%;
+  padding: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* .login-container .right .form-container .boy-container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+* .login-container .right .form-container .boy-container .content .boy {
+  width: 70px;
+}
+
+* .login-container .right .form-container .boy-container .content .bar-container {
+  width: 100%;
+  background-color: #fff;
+  height: 10px;
+  border-radius: 7px;
+}
+
+* .login-container .right .form-container .boy-container .content .bar-container .bar {
+  background-color: #f55b67;
+  height: 100%;
+  border-radius: 7px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+* .login-container .right .form-container .form-content {
+  width: 60%;
+  background-color: #fff;
+  margin-top: 50px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 30px;
+}
+
+* .login-container .right .form-container .form-content .groupe {
+  padding: 30px 45px 0;
+}
+
+* .login-container .right .form-container .form-content .groupe .email-container, * .login-container .right .form-container .form-content .groupe .container-mp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+* .login-container .right .form-container .form-content .groupe .email-container label, * .login-container .right .form-container .form-content .groupe .container-mp label {
+  margin-bottom: 5px;
+  color: #0c5e9e;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+* .login-container .right .form-container .form-content .groupe .email-container input, * .login-container .right .form-container .form-content .groupe .container-mp input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #707070;
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+}
+
+* .login-container .right .form-container .form-content .groupe .email-container input:focus, * .login-container .right .form-container .form-content .groupe .container-mp input:focus {
+  border: 1px solid #2596be;
+  outline: none;
+}
+
+* .login-container .right .form-container .form-content .groupe .email-container .pass-container, * .login-container .right .form-container .form-content .groupe .container-mp .pass-container {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #707070;
+}
+
+* .login-container .right .form-container .form-content .groupe .email-container .pass-container input, * .login-container .right .form-container .form-content .groupe .container-mp .pass-container input {
+  border: none;
+}
+
+* .login-container .right .form-container .form-content .groupe .email-container .pass-container input:focus, * .login-container .right .form-container .form-content .groupe .container-mp .pass-container input:focus {
+  border: none;
+}
+
+* .login-container .right .form-container .form-content .groupe .email-container .pass-container .icn, * .login-container .right .form-container .form-content .groupe .container-mp .pass-container .icn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  color: #000;
+}
+
+* .login-container .right .form-container .form-content .groupe .email-container .pass-container:focus-within, * .login-container .right .form-container .form-content .groupe .container-mp .pass-container:focus-within {
+  border: 1px solid #2596be;
+}
+
+* .login-container .right .form-container .form-content .btn-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
+  margin: 0 80px;
+  margin-top: 20px;
+  background-color: #0e74c2;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+* .login-container .right .form-container .form-content .err-message {
+  font-size: 0.9rem;
+  color: #eb4444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+* .login-container .right .form-container .form-content .footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10px;
+}
+
+* .login-container .right .form-container .form-content .footer .link {
+  color: #000;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-bottom: 0.5px solid #000;
+}
+/*# sourceMappingURL=styles.css.map */

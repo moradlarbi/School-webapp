@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+$hint-of-red: #f8f6f8;
+$martinique: #2c3252;
+$carnation: #f55b67;
+$petite-orchid: #e19ca1;
+$wafer: #dfc4c6;
+$di-serria: #e1936a;
+$heather: #aebdcb;
+$mandys-pink: #f3c0b5;
+$geyser: #d0d9df;
+$light-blue: #2596be;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+
+    .container {
+        width: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        
+        
+
+        .nav-container {
+            width: 15%;
+            background-color: #fff;
+            
+            nav {
+                width: 100%;
+                padding-top: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .logo-container {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    padding-left: 40px;
+                    margin-bottom: 100px;
+                    .logo {
+                        margin-right: 5px;
+                    }
+                    .logo-text {
+                        font-size: 2rem;
+                    }
+                }
+                .nav-respo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .list {
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+    
+                        .item {
+                            margin: 10px 30px;
+                            padding: 5px 10px;
+                            border-radius: 10px;
+                            transition-duration: 0.3s;
+                            
+                            .icon {
+                                color: $heather;
+                                transition-duration: 0.3s;
+    
+                            }
+                            
+                            .link {
+                                text-decoration: none;
+                                color: #2c3252;
+                                padding-left: 10px;
+                                font-weight: bold;
+                                transition-duration: 0.3s;
+                            }
+                        }
+                        .actif {
+                            background-color: $hint-of-red;
+                            .icon {
+                                color: $light-blue;
+                                
+                            }
+                            .link {
+                                color: $light-blue;
+                            }
+                        }
+                    }
+                    .logo-container {
+                        .logo {
+                            width: 30px;
+                        }
+                        .logo-text {
+                            font-size: 1.5rem;
+                        }
+                        display: none;
+                    }
+                }
+                
+            }
+        }
+        .timeTracking-container {
+            width: 85%;
+            padding: 40px 20px;
+            height: 100vh;
+            box-shadow: -10px 0 10px 0 rgb(221, 221, 221);
+            margin-bottom: 0px;
+            
+            ::-webkit-scrollbar {
+                width: .7em;
+                
+            }
+            ::-webkit-scrollbar-track {
+                background: $petite-orchid;
+                border-radius: 15px;
+                
+            }
+            ::-webkit-scrollbar-thumb {
+                background: $carnation;
+                border-radius: 15px;
+                
+            }
+        }
+        @media only screen and (max-width: 968px){
+            flex-direction: column;
+
+            .nav-container {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+                box-shadow: 10px 0 10px 0 rgb(221, 221, 221);
+
+                nav {
+                    flex-direction: row;
+                    padding: 0;
+                    position: relative;
+
+                    .logo-container {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        padding-left: 40px;
+                        margin-bottom: 30px;
+                        margin-top: 30px;
+                        .logo {
+                            margin-right: 5px;
+                        }
+                        .logo-text {
+                            font-size: 2rem;
+                        }
+                    }
+
+                    .nav-respo {
+                        display: flex;
+                        
+                        .burger-container {
+                            padding-right: 40px;
+
+                            .burger {
+                                width: 30px;
+                                height: 25px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                position: relative;
+                                z-index:  15;
+                                .line {
+                                    width: 20px;
+                                    height: 3px;
+                                    margin-bottom: 3px;
+                                    background-color: #000;
+                                    border-radius: 50px;
+                                }
+                            }
+                        }
+                        .list {
+                            display: none;
+                        }
+                    }
+                    .respo {
+                        width: 100%;
+                        height: 100vh;
+                        position: absolute;
+                        top: 0%;
+                        right: 0%;
+                        z-index: 10;
+                        max-width: 500px;
+                        background-color: $hint-of-red;
+
+                        .burger-container {
+                            padding-right: 40px;
+                            display: flex;
+                            justify-content: flex-end;
+                            margin-top: 10px;
+                            .burger {
+                                width: 30px;
+                                height: 25px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                position: relative;
+                                z-index:  15;
+                                .line {
+                                    width: 20px;
+                                    height: 3px;
+                                    margin-bottom: 3px;
+                                    background-color: #000;
+                                    border-radius: 50px;
+                                }
+                            }
+                            .open {
+                                margin-right: 10px;
+                                .line1 {
+                                    transform: rotate(45deg) translate(1px, 5px);
+                                }
+                                .line2 {
+                                    display: none;
+                                }
+                                .line3 {
+                                    transform: rotate(-45deg) translate(-1px, -3px);
+                                }
+                            }
+                        }
+                        .list {
+                            display: flex;
+                            border: 1px solid black;
+                        }
+                        .logo-container {
+                            display: flex;
+
+                            .logo-text {
+                                color: #000;
+                            }
+                        }
+                    }     
+                    
+                }
+                
+            }
+            .nav-container-respo::after {
+                content: "";
+                position: absolute;
+                z-index: 5;
+                background-color: #000000;
+                opacity: 0.5;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100vh;
+            }
+            .timeTracking-container {
+                width: 100%;
+                z-index: -1;
+            }
+        }
+    }
+    .hide {
+        overflow: hidden;
+    }
+    
+}
