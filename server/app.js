@@ -5,7 +5,7 @@ const app = express()
 const bodyParser = require("body-parser")
 app.use(cors())
 //connect db
-mongoose.connect("mongodb+srv://morad:morad200105@cluster0.9wt8a.mongodb.net/schooldb")
+mongoose.connect("mongodb+srv://morad:password@cluster0.9wt8a.mongodb.net/schooldb")
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: false }));
